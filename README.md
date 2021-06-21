@@ -1,5 +1,3 @@
-# learn-junit5-examples
-
 # 晒酷学院
 [软件测试视频教程](http://shareku.ke.qq.com/)
 <p>
