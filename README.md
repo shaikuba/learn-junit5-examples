@@ -6,3 +6,7 @@
 <a href="https://jq.qq.com/?_wv=1027&k=EQGVQd8Z">软件测试交流学习群</a>
 </p>
 <br/>
+
+# 扫码加入微信技术学习交流群
+
+![avatar](img/public.jpg)
