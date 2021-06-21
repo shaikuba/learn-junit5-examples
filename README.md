@@ -9,4 +9,4 @@
 
 # 扫码加入微信技术学习交流群
 
-![avatar](img/public.jpg)
+![avatar](img/weiwei.jpg)
