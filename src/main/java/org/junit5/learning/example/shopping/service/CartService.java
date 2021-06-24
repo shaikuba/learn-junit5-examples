@@ -8,17 +8,13 @@ import org.junit5.learning.example.shopping.model.Order;
 public interface CartService {
 
     /**
-     * Clear all goods in the cart
-     */
-    void clearGoods(Cart cart);
-
-    /**
-     * Clear all specified by goods type
+     * Add {@link Goods} to cart
      *
      * @param cart  cart
-     * @param goods specified goods
+     * @param goods goods
+     * @param size  goods number
      */
-    void clearGoods(Cart cart, Goods goods);
+    void addGoods(Cart cart, Goods goods, Integer size);
 
     /**
      * Clear goods by goods type, and specified size.
@@ -30,13 +26,17 @@ public interface CartService {
     void removeGoods(Cart cart, Goods goods, Integer size);
 
     /**
-     * Add {@link Goods} to cart
+     * Clear all goods in the cart
+     */
+    void clearGoods(Cart cart);
+
+    /**
+     * Clear all specified by goods type
      *
      * @param cart  cart
-     * @param goods goods
-     * @param size  goods number
+     * @param goods specified goods
      */
-    void addGoods(Cart cart, Goods goods, Integer size);
+    void clearGoods(Cart cart, Goods goods);
 
     /**
      * Submit order
