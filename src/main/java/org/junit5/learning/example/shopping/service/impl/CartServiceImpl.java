@@ -9,13 +9,9 @@ import org.junit5.learning.example.shopping.service.CartService;
 public class CartServiceImpl implements CartService {
 
     @Override
-    public void clearGoods(Cart cart) {
-        cart.getGoods().clear();
-    }
-
-    @Override
-    public void clearGoods(Cart cart, Goods goods) {
-        cart.getGoods().remove(goods);
+    public void addGoods(Cart cart, Goods goods, Integer size) {
+        cart.getGoods().computeIfPresent(goods, (k, oldVSize) -> oldVSize == null ? 0 : oldVSize + size);
+        cart.getGoods().computeIfAbsent(goods, k -> size);
     }
 
     @Override
@@ -24,9 +20,13 @@ public class CartServiceImpl implements CartService {
     }
 
     @Override
-    public void addGoods(Cart cart, Goods goods, Integer size) {
-        cart.getGoods().computeIfPresent(goods, (k, oldVSize) -> oldVSize == null ? 0 : oldVSize + size);
-        cart.getGoods().computeIfAbsent(goods, k -> size);
+    public void clearGoods(Cart cart) {
+        cart.getGoods().clear();
+    }
+
+    @Override
+    public void clearGoods(Cart cart, Goods goods) {
+        cart.getGoods().remove(goods);
     }
 
     @Override

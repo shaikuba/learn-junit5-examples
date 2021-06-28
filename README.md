@@ -8,3 +8,8 @@
 # 扫码加入微信技术学习交流群
 
 ![avatar](img/weiwei.png)
+
+
+# Junit 5 Architecture
+
+![avatar](img/junit5-architecture.png)
