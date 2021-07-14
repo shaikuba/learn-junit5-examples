@@ -11,4 +11,14 @@ public class Person {
 
     private String nickname;
 
+    private int age;
+
+    public Person() {}
+
+    public Person(String username, int age) {
+        this.username = username;
+        this.age = age;
+    }
+
+
 }

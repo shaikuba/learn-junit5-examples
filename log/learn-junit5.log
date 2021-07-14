@@ -1,0 +1,78 @@
+2021-07-14 16:54:42.062 [main] INFO  - value=null
+2021-07-14 16:55:31.607 [main] INFO  - value=0
+2021-07-14 16:56:51.371 [main] INFO  - value=0
+2021-07-14 16:57:34.552 [main] INFO  - value=0
+2021-07-14 16:57:47.685 [main] INFO  - value=0
+2021-07-14 16:59:02.350 [main] INFO  - value=0
+2021-07-14 16:59:55.273 [main] INFO  - value=0
+2021-07-14 17:03:23.960 [main] INFO  - value=0
+2021-07-14 17:03:33.883 [main] INFO  - value=0
+2021-07-14 17:09:30.590 [main] INFO  - value=HUAWEI
+2021-07-14 17:09:30.601 [main] INFO  - value=APPLE
+2021-07-14 17:09:30.603 [main] INFO  - value=XIAOMI
+2021-07-14 17:09:30.605 [main] INFO  - value=OPPO
+2021-07-14 17:09:30.607 [main] INFO  - value=NOKIA
+2021-07-14 17:37:07.705 [main] INFO  - Person: 
+2021-07-14 17:37:07.715 [main] INFO  - Person: 
+2021-07-14 17:38:11.845 [main] INFO  - Person name: jupiter, age: 21
+2021-07-14 17:38:11.855 [main] INFO  - Person name: venus, age: 22
+2021-07-14 17:43:29.201 [main] INFO  - Person name: jupiter, age: 21
+2021-07-14 17:43:29.204 [main] INFO  - Mobile: APPLE
+2021-07-14 17:43:29.214 [main] INFO  - Person name: jupiter, age: 21
+2021-07-14 17:43:29.214 [main] INFO  - Mobile: HUAWEI
+2021-07-14 17:46:40.883 [main] INFO  - Person name: venus, age: 22
+2021-07-14 17:46:40.892 [main] INFO  - Person name: ray, age: 23
+2021-07-14 17:46:40.893 [main] INFO  - Person name: jupiter, age: 24
+2021-07-14 20:17:02.534 [main] INFO  - value=1
+2021-07-14 20:17:02.560 [main] INFO  - value=2
+2021-07-14 20:17:02.563 [main] INFO  - value=3
+2021-07-14 20:20:54.107 [main] INFO  - value=null
+2021-07-14 20:22:33.202 [main] INFO  - value=0
+2021-07-14 20:23:53.426 [main] INFO  - value=0
+2021-07-14 20:28:49.430 [main] INFO  - value=HUAWEI
+2021-07-14 20:28:49.454 [main] INFO  - value=APPLE
+2021-07-14 20:28:49.458 [main] INFO  - value=XIAOMI
+2021-07-14 20:28:49.462 [main] INFO  - value=OPPO
+2021-07-14 20:28:49.467 [main] INFO  - value=NOKIA
+2021-07-14 20:29:53.416 [main] INFO  - value=HUAWEI
+2021-07-14 20:29:53.438 [main] INFO  - value=APPLE
+2021-07-14 20:30:11.085 [main] INFO  - value=XIAOMI
+2021-07-14 20:30:11.108 [main] INFO  - value=OPPO
+2021-07-14 20:30:11.112 [main] INFO  - value=NOKIA
+2021-07-14 20:30:58.875 [main] INFO  - value=HUAWEI
+2021-07-14 20:32:47.901 [main] INFO  - value=HUAWEI
+2021-07-14 20:33:27.621 [main] INFO  - value=HUAWEI
+2021-07-14 20:33:27.646 [main] INFO  - value=APPLE
+2021-07-14 20:36:21.352 [main] INFO  - name: venus, age: 22
+2021-07-14 20:36:21.375 [main] INFO  - name: jupiter, age: 23
+2021-07-14 20:36:21.379 [main] INFO  - name: mercury, age: 24
+2021-07-14 20:36:21.385 [main] INFO  - name: mars, age: 25
+2021-07-14 20:37:00.151 [main] INFO  - name: venus, age: 22
+2021-07-14 20:37:00.173 [main] INFO  - name: jupiter, age: 23
+2021-07-14 20:37:00.194 [main] INFO  - name: mars, age: 25
+2021-07-14 20:37:20.231 [main] INFO  - name: venus, age: 22
+2021-07-14 20:37:20.254 [main] INFO  - name: jupiter, age: 23
+2021-07-14 20:37:20.258 [main] INFO  - name: mercury, age: null
+2021-07-14 20:37:20.261 [main] INFO  - name: mars, age: 25
+2021-07-14 20:37:51.609 [main] INFO  - name: venus, age: 22
+2021-07-14 20:37:51.632 [main] INFO  - name: jupiter, age: 23
+2021-07-14 20:37:51.637 [main] INFO  - name: mercury, age: null
+2021-07-14 20:37:51.640 [main] INFO  - name: mars, age: 25
+2021-07-14 20:40:55.484 [main] INFO  - name: venus, age: 22
+2021-07-14 20:40:55.507 [main] INFO  - name: jupiter, age: 23
+2021-07-14 20:40:55.511 [main] INFO  - name: mercury, age: 24
+2021-07-14 20:40:55.514 [main] INFO  - name: mars, age: 25
+2021-07-14 20:40:55.518 [main] INFO  - name: saturn, age: 26
+2021-07-14 20:41:37.036 [main] INFO  - name: venus, age: 22
+2021-07-14 20:41:37.057 [main] INFO  - name: jupiter, age: 23
+2021-07-14 20:41:37.060 [main] INFO  - name: mercury, age: 24
+2021-07-14 20:41:37.065 [main] INFO  - name: mars, age: 25
+2021-07-14 20:41:37.068 [main] INFO  - name: saturn, age: 26
+2021-07-14 20:46:30.460 [main] INFO  - Person name: jupiter, age: 21
+2021-07-14 20:46:30.484 [main] INFO  - Person name: venus, age: 22
+2021-07-14 20:48:20.515 [main] INFO  - Person name: jupiter, age: 21
+2021-07-14 20:48:20.539 [main] INFO  - Person name: venus, age: 22
+2021-07-14 20:51:17.177 [main] INFO  - Person name: jupiter, age: 21
+2021-07-14 20:51:17.182 [main] INFO  - Mobile: APPLE
+2021-07-14 20:51:17.205 [main] INFO  - Person name: venus, age: 22
+2021-07-14 20:51:17.206 [main] INFO  - Mobile: HUAWEI

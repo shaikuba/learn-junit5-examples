@@ -1,9 +1,11 @@
 package org.junit5.learning.example.calc;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class CalculatorServiceImpl implements CalculatorService {
     @Override
     public int add(int a, int b) {
-        System.out.println("add()");
         return a + b;
     }
 
@@ -29,6 +31,6 @@ public class CalculatorServiceImpl implements CalculatorService {
 
     @Override
     public void print() {
-        System.out.println("============");
+        log.info("The print method of CalculatorServiceImpl for printing message on console.");
     }
 }
