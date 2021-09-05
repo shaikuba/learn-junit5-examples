@@ -60,12 +60,9 @@ public class AssertionsExample {
 //        );
 
         System.out.println("assert all executables do not throw exceptions.");
-        assertAll("errors, ", Stream.of(
-                () -> {
-                    throw new OutOfMemoryError();
-                }
-                , () -> System.out.println("No errors")
-        ));
+        assertAll("errors, ", Stream.of(() -> {
+            throw new OutOfMemoryError();
+        }, () -> System.out.println("No errors")));
 
 //        assertAll("errors, ", Stream.of(
 //                () -> {

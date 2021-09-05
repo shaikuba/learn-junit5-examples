@@ -1,19 +1,18 @@
 package learn.junit5.shopping.factory;
 
-import it.learn.examples.shopping.ShoppingConsole;
-import it.learn.examples.shopping.model.Cart;
-import it.learn.examples.shopping.model.Goods;
-import it.learn.examples.shopping.service.CartService;
-import it.learn.examples.shopping.service.impl.CartServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DynamicNode;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;
+import org.junit5.learning.example.shopping.ShoppingConsole;
+import org.junit5.learning.example.shopping.model.Cart;
+import org.junit5.learning.example.shopping.model.Goods;
+import org.junit5.learning.example.shopping.service.CartService;
+import org.junit5.learning.example.shopping.service.impl.CartServiceImpl;
 
 import java.io.File;
 import java.math.BigDecimal;
-import java.net.URI;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
