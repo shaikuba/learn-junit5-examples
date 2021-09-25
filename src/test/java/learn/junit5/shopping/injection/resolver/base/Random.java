@@ -1,4 +1,4 @@
-package learn.junit5.shopping.params.resolver.base;
+package learn.junit5.shopping.injection.resolver.base;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -26,4 +26,5 @@ public @interface Random {
         INTEGRAL,
         DECIMAL
     }
+
 }

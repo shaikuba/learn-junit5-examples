@@ -1,4 +1,4 @@
-package learn.junit5.shopping.params;
+package learn.junit5.shopping.parameterized;
 
 import learn.junit5.shopping.model.Person;
 import org.junit.jupiter.api.extension.ExtensionContext;

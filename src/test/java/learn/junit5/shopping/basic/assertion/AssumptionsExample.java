@@ -1,11 +1,13 @@
-package learn.junit5.shopping.basic;
+package learn.junit5.shopping.basic.assertion;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
 
+@Slf4j
 public class AssumptionsExample {
 
     @Test
@@ -13,7 +15,7 @@ public class AssumptionsExample {
 
         assertTrue(false);
 
-        System.out.println("====");
+        log.info("====");
     }
 
     @Test
@@ -21,7 +23,7 @@ public class AssumptionsExample {
 
         assumeTrue(false);
 
-        System.out.println("====");
+        log.info("====");
     }
 
     @Test
@@ -29,7 +31,7 @@ public class AssumptionsExample {
 
         assumingThat(() -> false, () -> System.out.println("111"));
 
-        System.out.println("====");
+        log.info("====");
     }
 
 }

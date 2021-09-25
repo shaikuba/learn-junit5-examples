@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <java.version>1.8</java.version>
+
         <guava.version>25.0-jre</guava.version>
         <commons.io.version>2.6</commons.io.version>
         <commons.lang3.version>3.4</commons.lang3.version>
@@ -63,14 +65,13 @@
             <artifactId>junit-jupiter</artifactId>
             <version>${junit.jupiter.version}</version>
         </dependency>
-<!-- Only required for old IDE tools
+        <!--Only required for old IDE tools-->
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
             <version>${junit.platform.version}</version>
             <scope>test</scope>
         </dependency>
--->
 
         <!-- mockito begin -->
         <dependency>
@@ -112,7 +113,8 @@
                     <forkCount>1</forkCount>
                     <reuseForks>true</reuseForks>
                     <includes>
-                        <include>**/**TestCase.java</include>
+                        <include>**/Filter**.java</include>
+                        <include>**/Tag**.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>

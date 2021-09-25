@@ -1,4 +1,4 @@
-package learn.junit5.shopping.params.resolver.base;
+package learn.junit5.shopping.injection.resolver.base;
 
 import java.util.Random;
 import java.util.UUID;
@@ -12,7 +12,7 @@ public class RandomUtils {
 
     public static final int[] upperCharStream = IntStream.range(65, 91).toArray();
 
-    public static final int[] charStream = IntStream.concat(IntStream.range(48, 58), IntStream.range(65, 91)).toArray();
+    public static final int[] charStream = IntStream.concat(IntStream.range(97, 123), IntStream.range(65, 91)).toArray();
 
     public static final int[] alphaCharStream = IntStream.concat(IntStream.range(48, 58), IntStream.concat(IntStream.range(65, 91), IntStream.range(97, 123))).toArray();
 

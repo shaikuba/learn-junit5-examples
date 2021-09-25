@@ -1,60 +1,46 @@
 package learn.junit5.shopping.basic.lifecycle;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@Slf4j
 public class TestInstanceExample {
 
     public TestInstanceExample() {
-        System.out.println("init constructor.");
+        log.info("init constructor.");
     }
 
     @BeforeAll
-    static void beforeAll() {
-        System.out.println("before all");
+    static void before_all() {
+        log.info("before all");
     }
+
+    @AfterAll
+    static void after_all() {
+        log.info("after all");
+    }
+
 
     @BeforeEach
-    void beforeEach() {
-        System.out.println("before each");
+    void before_each() {
+        log.info("before each");
+    }
+
+    @AfterEach
+    void after_each() {
+        log.info("after each");
     }
 
     @Test
-    void test1() {
-        System.out.println("test1 instance test");
+    void test_one() {
+        log.info("test_one instance test");
     }
 
     @Test
-    void test2() {
-        System.out.println("test2 instance test");
+    void test_two() {
+        log.info("test_two instance test");
     }
 
-    @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-    @Nested
-    public class Nested1 {
-
-        public Nested1() {
-            System.out.println("initialize nested1");
-        }
-        //@BeforeAll
-        void beforeAll() {
-            System.out.println("before all");
-        }
-
-        @BeforeEach
-        void beforeEach() {
-            System.out.println("Nested1 before each");
-        }
-
-        @Test
-        void test1() {
-            System.out.println("Nested1 test1 instance test");
-        }
-
-        @Test
-        void test2() {
-            System.out.println("Nested1 test2 instance test");
-        }
-    }
 
 }
