@@ -1,7 +1,9 @@
 package learn.junit5.shopping.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Data
 public class Person {
 
@@ -12,4 +14,9 @@ public class Person {
         this.name = name;
         this.age = age;
     }
+
+
+//    public static Person getPerson(String name) {
+//        return new Person(name, -1);
+//    }
 }
