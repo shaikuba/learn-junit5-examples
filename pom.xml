@@ -20,6 +20,13 @@
         <junit.jupiter.version>5.7.1</junit.jupiter.version>
         <junit.platform.version>1.7.1</junit.platform.version>
         <mockito.version>3.3.3</mockito.version>
+
+        <aspectj.version>1.9.7</aspectj.version>
+
+        <allure.version>2.17.2</allure.version>
+        <allure.download.url>
+            https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${allure.version}/allure-commandline-${allure.version}.zip
+        </allure.download.url>
     </properties>
     <dependencies>
 
@@ -52,7 +59,6 @@
             <version>${commons.lang3.version}</version>
         </dependency>
 
-
         <!--lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -66,12 +72,12 @@
             <version>${junit.jupiter.version}</version>
         </dependency>
         <!--Only required for old IDE tools-->
-<!--        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>${junit.platform.version}</version>
-            <scope>test</scope>
-        </dependency>-->
+        <!--        <dependency>
+                    <groupId>org.junit.platform</groupId>
+                    <artifactId>junit-platform-launcher</artifactId>
+                    <version>${junit.platform.version}</version>
+                    <scope>test</scope>
+                </dependency>-->
 
         <!-- mockito begin -->
         <dependency>
@@ -91,7 +97,44 @@
             <version>${mockito.version}</version>
         </dependency>
 
+        <!--aspectjweaver-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure.version}</version>
+        </dependency>
+
     </dependencies>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.22.2</version>
+
+                <configuration>
+                    <outputName>JUnit5-Test-Report-Example</outputName>
+                    <title>junit-jupiter-surefire-report</title>
+                    <linkXRef>true</linkXRef>
+                </configuration>
+
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>3.1.1</version>
+            </plugin>
+
+        </plugins>
+    </reporting>
 
     <build>
         <plugins>
@@ -110,15 +153,35 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
+                    <!--<argLine>-->
+                    <!-- -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
+                    <!--</argLine>-->
                     <forkCount>1</forkCount>
                     <reuseForks>true</reuseForks>
                     <includes>
-                        <include>**/Filter**.java</include>
-                        <include>**/Tag**.java</include>
+                        <include>**/concurrency/ConcurrentTest**.java</include>
+                        <!--<include>**/Filter**.java</include>-->
+                        <!--<include>**/Tag**.java</include>-->
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.11.2</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.10.0</version>
+            </plugin>
+
         </plugins>
 
         <resources>
